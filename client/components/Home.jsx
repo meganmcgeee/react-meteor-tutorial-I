@@ -1,1 +1,1 @@
-﻿Home = React.createClass({  render() {    return (      <div className='jumbotron'>	       <div className='container'>           <h1> First React Component!</h1>           <p> Pretty sweet</p>        </div>      </div>  );  },});
+﻿Home = React.createClass({  render() {    return (      <div className='jumbotron'>	       <div className='container'>           <h1> First React Component!</h1>           <p>Hello, world!</p>        </div>      </div>  );  },});
