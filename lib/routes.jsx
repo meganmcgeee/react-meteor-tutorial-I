@@ -1,10 +1,3 @@
-FlowRouter.route('/', {
-  name: 'Home',
-  action(params) {
-    ReactLayout.render(Home);
-  },
-});
-
 function renderMainLayoutWith(component) {
   ReactLayout.render(MainLayout, {
     header: <Header />,
@@ -12,3 +5,10 @@ function renderMainLayoutWith(component) {
     footer: <Footer />,
   });
 }
+
+FlowRouter.route('/', {
+  name: 'Home',
+  action(params) {
+    renderMainLayoutWith(<Home />);
+  },
+});
